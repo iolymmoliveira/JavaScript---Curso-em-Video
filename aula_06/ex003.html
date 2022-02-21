@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Primeiro Programa</title>
+    <style>
+      body {
+        background-color: rgb(243, 137, 66);
+        color: black;
+        font: normal 1.3rem Arial;
+      }
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo!!!</h1> <!-- Isso é um comentário -->
+    <p>Já me livrei da maldição.</p>
+    <script>
+      //Number.parseInt - para números inteiros
+      //Number - para o js interpretar o tipo de número
+      //String(n) ou n.toString() - converter um número para string
+      var n1 = Number.parseFloat(window.prompt ("Digite um número: "));
+      var n2 = Number.parseFloat(window.prompt ("Digite outro número: "));
+      var s = n1 + n2;
+      //window.alert("A soma dos valores é " + s); //Forma concatenada
+      window.alert(`A soma dos valores é ${s}`);
+    </script>
+</body>
+</html>

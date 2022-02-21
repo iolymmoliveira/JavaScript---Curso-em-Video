@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfandega</title>
+</head>
+<body>
+    <h1>Sistema de Reconhecimento de Nacionalidade</h1>
+    Vivendo no País: <input type="text" class="txtpais"> 
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div class="nacio"></div>    
+    <script>
+        function verificar() {
+            var txtpais = document.querySelector("input.txtpais")
+            var nacio = document.querySelector("div.nacio")
+            var pais = (txtpais.value)
+            nacio.innerHTML = `<p>Sua moradia atual está localizada no País: <strong>${pais}</strong></p>`
+           if (pais != "Brasil"){
+               nacio.innerHTML += "<p>Você é <strong>ESTRANGEIRO</strong>!</p>"
+           } else {
+                nacio.innerHTML += "<p>Você é <strong>BRASILEIRO</strong>!</p>"
+           }
+        }
+    </script>
+</body>
+</html>
